@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="PL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dziennik tajemnic</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Sen:wght@500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <img class="deactive" id="bglvl1B" src="img/bglvl1B.jpg" alt="">
+
+        <img class="deactive" id="bglvl2B" src="img/bglvl2B.jpg" alt="">
+
+        <img class="deactive" id="bglvl3B" src="img/bglvl3B.jpg" alt="">
+
+        <img class="deactive" id="bglvl4B" src="img/bglvl4B.jpg" alt="">
+
+        <img class="deactive" id="bglvl5B" src="img/bglvl5B.jpg" alt="">
+
+        <img class="deactive" id="bglvl6B" src="img/bglvl6B.jpg" alt="">
+
+        <img class="deactive" id="bglvl7B" src="img/bglvl7B.jpg" alt="">
+
+        <img class="deactive" id="bglvl8B" src="img/bglvl8B.jpg" alt="">
+
+        <img class="deactive" id="bglvl9B" src="img/bglvl9B.jpg" alt="">
+
+        <img class="deactive" id="bglvl10B" src="img/bglvl10B.jpg" alt="">
+
+        <!-- FLASHLIGHT -->
+        <div id="flashlight"></div>
+
+        <!-- BOOK_BOX -->
+        <div id="book__box" class="book">
+            <img id="book" src="img/book.png" alt="">
+        </div>
+
+        <!-- AUDIO -->
+        <audio id="theme">
+            <source src="music/tortuga-epic-movie-adventure-music-4284.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="theme2">
+            <source src="music/unio-mystica-156380.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="nextPage">
+            <source src="music/mixkit-big-paper-page-turn-1105.wav" type="audio/wav">
+        </audio>
+        
+        <!-- LECTORS -->
+        <audio id="text1">
+            <source src="music/text1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="text2">
+            <source src="music/text2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="text3">
+            <source src="music/text3.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <div id="switch" class="light__switch deactive">
+            <img id="switchImg" src="img/switch__off.png" alt="">
+        </div>
+        
+        <!-- BUTTONS -->
+        <div class="languageButton" id="langButton">
+            <img src="img/PL__flag.png" alt="" id="langFlag">
+            <h5 id="langText">PL</h5>
+        </div>
+
+        <div class="fullbutton fullbuttonAnimation" id="fullButton">
+            <img src="img/infos/fullscreen2.png" alt="">
+        </div>
+
+        <div class="deactive rotatebutton" id="rotateButton">
+            <img src="img/infos/rotation2.png" alt="">
+        </div>
+
+    <!-- CONTAINER 1/2 -->
+    <div class="container1_2">
+    
+        <p id="text__place"></p>
+
+        <button class="button-margin" id="start">START</button>
+
+        <form class="deactive" id="form" onsubmit="return false">
+            <input type="text" id="name" onfocus="this.value=''" value="Podaj imię"><br><br>
+        </form>
+
+        <form class="deactive" id="form2" onsubmit="return false">
+            <input type="text" id="pass" onfocus="this.value=''" value="Hasło"><br><br>
+        </form>   
+
+        <button class="deactive" id="enter">następna strona</button>
+
+        <button class="deactive" id="enterlvl4">następna strona</button>
+        <button class="deactive" id="enterlvl5">następna strona</button>
+        <button class="deactive" id="enterlvl6">następna strona</button>
+        <button class="deactive" id="enterlvl7">następna strona</button>
+        <button class="deactive" id="enterlvl8">następna strona</button>
+        <button class="deactive" id="enterlvl9">następna strona</button>
+
+    </div>
+
+        <!-- INFO FOR PLAYER -->
+        <div class="infoForPlayer deactive" id="infoForPlayer">
+            <br>
+        </div>
+
+        <!-- <button class="switch"></button> -->
+        <!-- ??? -->
+        <div class="switch deactive"></div>
+        
+        <script type="module" src="js/main.js"></script>
+        <script src="js/flashlight.js"></script>
+
+    </body>
+</html>
